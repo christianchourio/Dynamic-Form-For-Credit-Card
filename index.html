@@ -4,12 +4,38 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Formulario de Tarjeta de Crédito Dinámico</title>
+	<title>Dynamic credit card form</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	
+	<div class="container">
+		<section class="card" id="card">
+			<div class="lead">
+				<div class="logo">
+					<img src="img/logos/visa.png" alt="visa">
+				</div>
+				<img src="img/chip-tarjeta.png" class="chip" alt="">
+				<div class="datos">
+					<div class="group" id="number">
+						<p class="label">Card number</p>
+						<p class="number">#### #### #### ####</p>
+					</div>
+					<div class="flexbox">
+						<div class="group" id="name">
+							<p class="label">Name card</p>
+							<p class="name">Jhon Doe</p>
+						</div>
+						<div class="group" id="expiration">
+							<p class="label">Expiration</p>
+							<p class="name"> <span class="month">MM</span> / <span class="year">AA</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
