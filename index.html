@@ -21,12 +21,12 @@
 				<img src="img/chip-tarjeta.png" class="chip" alt="">
 				<div class="datos">
 					<div class="group" id="number">
-						<p class="label">Card number</p>
+						<p class="label">Card Number</p>
 						<p class="number">#### #### #### ####</p>
 					</div>
 					<div class="flexbox">
 						<div class="group" id="name">
-							<p class="label">Name card</p>
+							<p class="label">Name Card</p>
 							<p class="name">Jhon Doe</p>
 						</div>
 						<div class="group" id="expiration">
@@ -61,6 +61,40 @@
 		</div>
 
 		<!-- FORM -->
+		 <form action="" id="card-form" class="card-form">
+			<div class="group">
+				<label for="input-num">Card number</label>
+				<input type="text" id="input-num" maxlength="19" autocomplete="off">
+			</div>
+			<div class="group">
+				<label for="input-name">Name</label>
+				<input type="text" id="input-name" maxlength="19" autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="group expire">
+					<label for="selectMonth">Expiration</label>
+					<div class="flexbox">
+						<div class="group-select">
+							<select name="month" id="selectMonth">
+								<option disabled selected>Month</option>
+							</select>
+							<i class="fa-solid fa-angle-down"></i>
+						</div>
+						<div class="group-select">
+							<select name="year" id="selectYear">
+								<option disabled selected>Year</option>
+							</select>
+							<i class="fa-solid fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
+				<div class="group cvv">
+					<label for="inputCvv">CVV</label>
+					<input type="text" id="inputCvv" maxlength="3">
+				</div>
+			</div>
+			<button class="btn-send" type="submit">Send</button>
+		 </form>
 	</div>
 
 	<script src="https://kit.fontawesome.com/1daa537238.js" crossorigin="anonymous"></script>
